@@ -24,7 +24,7 @@ h1 {
     margin-bottom: 16px;
 }
 
-h2 {
+.centered-form__box h2 {
     margin-bottom: 30px;;
 }
 
@@ -50,7 +50,6 @@ button {
     font-size: 16px;
     transition: background .3s ease;
     border-radius: 5px;
-    outline:none;
 }
 
 button:hover {
@@ -166,8 +165,6 @@ button:disabled {
     font-size: 14px;
 }
 
-
-
 /* Chat Sidebar Styles */
 
 .room-title {
@@ -188,4 +185,33 @@ button:disabled {
     list-style-type: none;
     font-weight: 300;
     padding: 12px 24px 0 24px;
+}
+
+
+@media screen and (max-width: 700px) { 
+
+    .chat {  
+        flex-wrap: wrap;
+    }
+
+    .chat__sidebar {
+        width:100%;
+        height: auto;
+    }
+
+    .users {
+        padding-bottom: 10px;
+    }  
+  
+}
+
+@media screen and (max-width: 550px) { 
+    .compose {
+        display: block;
+    }
+
+    #message-form {
+        margin-bottom: 10px;
+    }
+  
 }
